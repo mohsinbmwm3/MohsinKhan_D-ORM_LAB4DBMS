@@ -16,10 +16,5 @@ on test.pricing_id = supplier_pricing.pricing_id)
 as test2 group by supplier_pricing.supp_id) 
 as final inner join supplier where final.supp_id = supplier.supp_id) as report;
 
-call proc();
-
 END$$
 DELIMITER ;
-
--- CALL `order-directory`.`proc`();
-
